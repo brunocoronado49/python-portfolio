@@ -1,3 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
 <h1>Post Detail</h1>
 
 <div>
@@ -6,3 +10,5 @@
     <p>{{post.description}}</p>
     <img src={{post.image.url}} alt={{post.title}} width="500px">
 </div>
+
+{% endblock content %}

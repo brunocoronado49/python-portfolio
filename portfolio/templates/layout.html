@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Navbar</h1>
+        {% include 'partials/navbar.html' %}
     </header>
     
-    {% block content %}
-    {% endblock content %}
+    <div class="main">
+        {% block content %}
+        {% endblock content %}
+    </div>
 
     <footer>Footer</footer>
 </body>
